@@ -1,0 +1,47 @@
+@import '../main.scss';
+
+$navbar-height:10vh;
+$section-height: 100vh - $navbar-height;
+
+nav{
+  height: $navbar-height;
+  justify-content: space-around;
+  #logo{
+    height:80%;
+  }
+  #nav_buttons_container{
+    display : none;
+    width: 0px;
+  }
+  #nav-date{
+    width: 70vw;
+    font-size: 3.8vw;
+    br{
+      display: none;
+    }
+  }
+}
+
+  footer {
+    display: flex;
+    width: 100vw;
+    z-index: 4;
+    position: fixed;
+    justify-content: center;
+    top: $section-height;
+    background-color: #C04F64;
+    height: $navbar-height;
+    border-top: 5px solid $primary-color;
+
+    #footer_buttons_container {
+      display: inline-flex;
+      height: 100%;
+      width: 92%;
+      font-weight: 600;
+      justify-content: space-between;
+      vertical-align: top;
+      align-items: center;
+      font-size: 3.5vw;
+    }
+  }
+

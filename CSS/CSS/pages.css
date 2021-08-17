@@ -1,0 +1,499 @@
+@import url("https://fonts.googleapis.com/css2?family=Arapey&display=swap");
+a {
+  color: #E7E7E7;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.divider {
+  border: 1px solid #a7a7a7;
+  width: 75%;
+  text-align: center;
+  margin-left: 12.5%;
+}
+
+body {
+  margin: 0px;
+  background-color: #2F2F2F;
+  font-family: "Arapey", serif;
+  color: #E7E7E7;
+}
+
+nav {
+  height: 18vh;
+  background-color: #2F2F2F;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-bottom: 5px solid #737DB1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav #logo {
+  height: 100%;
+  margin-left: 5vw;
+  padding-top: 2px;
+}
+nav #nav_buttons_container {
+  display: inline-flex;
+  height: 100%;
+  vertical-align: top;
+  align-items: center;
+}
+nav .nav-button {
+  margin-left: 1.1vw;
+  display: block;
+  font-size: 2vw;
+  color: #E7E7E7;
+  font-family: "Arapey", serif;
+  letter-spacing: 4px;
+}
+nav .nav-button:hover {
+  color: #737DB1;
+  cursor: pointer;
+}
+nav .nav-divider {
+  height: 35px;
+  vertical-align: middle;
+  border: 1px solid #E7E7E7;
+  margin-left: 1.1vw;
+}
+nav #nav-date {
+  font-size: 1.5vw;
+  margin: 0px;
+  width: 15vw;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  z-index: 4;
+  margin-right: 3vw;
+}
+
+footer {
+  display: none;
+}
+
+.page_container {
+  position: relative;
+  width: 70vw;
+  margin-right: 15vw;
+  margin-left: 15vw;
+  min-height: 82vh;
+  margin-top: 23vh;
+}
+
+h1 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+#img_container {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  width: 28vw;
+  margin-right: 4vw;
+  margin-bottom: 2vw;
+  margin-top: 1vw;
+}
+#img_container img {
+  width: 100%;
+}
+
+header {
+  display: inline-block;
+  width: 38vw;
+  margin-bottom: 3vh;
+}
+header .info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7vh;
+  max-width: -2vw;
+  align-items: baseline;
+}
+header .titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+header #main_infos #title {
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+header #main_infos #date-time {
+  font-size: 35px;
+}
+header #main_infos #date-time #week_day {
+  color: #C4C4C4;
+}
+header #main_infos #date-time #week_number {
+  font-size: 60px;
+  margin-left: 5px;
+  color: white;
+}
+header #film_infos {
+  font-size: 20px;
+}
+
+.paragraphe {
+  display: inline;
+}
+.paragraphe #descirption {
+  font-size: 30px;
+  color: white;
+}
+.paragraphe #texte {
+  font-size: 18px;
+  margin-bottom: 3vw;
+}
+.paragraphe h2 {
+  letter-spacing: 3px;
+  color: white;
+}
+
+.img_content {
+  text-align: center;
+  background-color: #737DB1;
+  width: 100%;
+  max-height: 65vh;
+  overflow: hidden;
+  margin-bottom: 3vw;
+}
+.img_content img {
+  width: 100%;
+}
+
+@media (max-device-width: 600px) {
+  @import url("https://fonts.googleapis.com/css2?family=Arapey&display=swap");
+  a {
+    color: #E7E7E7;
+    text-decoration: none;
+    font-weight: 800;
+  }
+
+  .divider {
+    border: 1px solid #a7a7a7;
+    width: 75%;
+    text-align: center;
+    margin-left: 12.5%;
+  }
+
+  body {
+    margin: 0px;
+    background-color: #2F2F2F;
+    font-family: "Arapey", serif;
+    color: #E7E7E7;
+  }
+
+  nav {
+    height: 18vh;
+    background-color: #2F2F2F;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 5px solid #737DB1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav #logo {
+    height: 100%;
+    margin-left: 5vw;
+    padding-top: 2px;
+  }
+  nav #nav_buttons_container {
+    display: inline-flex;
+    height: 100%;
+    vertical-align: top;
+    align-items: center;
+  }
+  nav .nav-button {
+    margin-left: 1.1vw;
+    display: block;
+    font-size: 2vw;
+    color: #E7E7E7;
+    font-family: "Arapey", serif;
+    letter-spacing: 4px;
+  }
+  nav .nav-button:hover {
+    color: #737DB1;
+    cursor: pointer;
+  }
+  nav .nav-divider {
+    height: 35px;
+    vertical-align: middle;
+    border: 1px solid #E7E7E7;
+    margin-left: 1.1vw;
+  }
+  nav #nav-date {
+    font-size: 1.5vw;
+    margin: 0px;
+    width: 15vw;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    z-index: 4;
+    margin-right: 3vw;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .page_container {
+    position: relative;
+    width: 70vw;
+    margin-right: 15vw;
+    margin-left: 15vw;
+    min-height: 82vh;
+    margin-top: 23vh;
+  }
+
+  h1 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+
+  nav {
+    height: 10vh;
+    justify-content: space-around;
+  }
+  nav #logo {
+    height: 80%;
+  }
+  nav #nav_buttons_container {
+    display: none;
+    width: 0px;
+  }
+  nav #nav-date {
+    width: 70vw;
+    font-size: 3.8vw;
+  }
+  nav #nav-date br {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    width: 100vw;
+    z-index: 4;
+    position: fixed;
+    justify-content: center;
+    top: 90vh;
+    background-color: #C04F64;
+    height: 10vh;
+    border-top: 5px solid #737DB1;
+  }
+  footer #footer_buttons_container {
+    display: inline-flex;
+    height: 100%;
+    width: 92%;
+    font-weight: 600;
+    justify-content: space-between;
+    vertical-align: top;
+    align-items: center;
+    font-size: 3.5vw;
+  }
+
+  .page_container {
+    width: 92vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-bottom: 11vh;
+    margin-top: 13.5vh;
+  }
+
+  #img_container {
+    min-height: 15vh;
+  }
+
+  header {
+    margin-top: 0vh;
+    margin-left: 3vw;
+    width: 56vw;
+  }
+  header #main_infos {
+    margin-bottom: 3vh;
+  }
+  header #film_infos {
+    font-size: 3vw;
+    margin-bottom: 2vh;
+    margin-top: 0vh;
+  }
+}
+@media (min-device-width: 600px) and (max-device-width: 1100px) {
+  @import url("https://fonts.googleapis.com/css2?family=Arapey&display=swap");
+  a {
+    color: #E7E7E7;
+    text-decoration: none;
+    font-weight: 800;
+  }
+
+  .divider {
+    border: 1px solid #a7a7a7;
+    width: 75%;
+    text-align: center;
+    margin-left: 12.5%;
+  }
+
+  body {
+    margin: 0px;
+    background-color: #2F2F2F;
+    font-family: "Arapey", serif;
+    color: #E7E7E7;
+  }
+
+  nav {
+    height: 18vh;
+    background-color: #2F2F2F;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 5px solid #737DB1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav #logo {
+    height: 100%;
+    margin-left: 5vw;
+    padding-top: 2px;
+  }
+  nav #nav_buttons_container {
+    display: inline-flex;
+    height: 100%;
+    vertical-align: top;
+    align-items: center;
+  }
+  nav .nav-button {
+    margin-left: 1.1vw;
+    display: block;
+    font-size: 2vw;
+    color: #E7E7E7;
+    font-family: "Arapey", serif;
+    letter-spacing: 4px;
+  }
+  nav .nav-button:hover {
+    color: #737DB1;
+    cursor: pointer;
+  }
+  nav .nav-divider {
+    height: 35px;
+    vertical-align: middle;
+    border: 1px solid #E7E7E7;
+    margin-left: 1.1vw;
+  }
+  nav #nav-date {
+    font-size: 1.5vw;
+    margin: 0px;
+    width: 15vw;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    z-index: 4;
+    margin-right: 3vw;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .page_container {
+    position: relative;
+    width: 70vw;
+    margin-right: 15vw;
+    margin-left: 15vw;
+    min-height: 82vh;
+    margin-top: 23vh;
+  }
+
+  h1 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+
+  nav {
+    height: 10vh;
+    justify-content: space-around;
+  }
+  nav #logo {
+    height: 80%;
+  }
+  nav #nav_buttons_container {
+    display: none;
+    width: 0px;
+  }
+  nav #nav-date {
+    width: 70vw;
+    font-size: 3.8vw;
+  }
+  nav #nav-date br {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    width: 100vw;
+    z-index: 4;
+    position: fixed;
+    justify-content: center;
+    top: 90vh;
+    background-color: #C04F64;
+    height: 10vh;
+    border-top: 5px solid #737DB1;
+  }
+  footer #footer_buttons_container {
+    display: inline-flex;
+    height: 100%;
+    width: 92%;
+    font-weight: 600;
+    justify-content: space-between;
+    vertical-align: top;
+    align-items: center;
+    font-size: 3.5vw;
+  }
+
+  .page_container {
+    width: 92vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-bottom: 11vh;
+    margin-top: 13.5vh;
+  }
+
+  #img_container {
+    min-height: 15vh;
+  }
+
+  header {
+    margin-top: 0vh;
+    margin-left: 3vw;
+    width: 56vw;
+  }
+  header #main_infos {
+    margin-bottom: 3vh;
+  }
+  header #film_infos {
+    font-size: 3vw;
+    margin-bottom: 2vh;
+    margin-top: 0vh;
+  }
+}
+
+/*# sourceMappingURL=pages.css.map */

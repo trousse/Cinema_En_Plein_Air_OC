@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Arapey&display=swap");
+.divider {
+  border: 1px solid #a7a7a7;
+  width: 75%;
+  text-align: center;
+  margin-left: 12.5%;
+}
+
+body {
+  margin: 0px;
+  background-color: #2F2F2F;
+  font-family: "Arapey", serif;
+  color: #E7E7E7;
+}
+
+nav {
+  height: 18vh;
+  background-color: #2F2F2F;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-bottom: 5px solid #737DB1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav #logo {
+  height: 100%;
+  margin-left: 5vw;
+  padding-top: 2px;
+}
+nav #nav_buttons_container {
+  display: inline-flex;
+  height: 100%;
+  vertical-align: top;
+  align-items: center;
+}
+nav .nav-button {
+  margin-left: 1.1vw;
+  display: block;
+  font-size: 30px;
+  color: #E7E7E7;
+  font-family: "Arapey", serif;
+  letter-spacing: 4px;
+}
+nav .nav-button:hover {
+  color: #737DB1;
+  cursor: pointer;
+}
+nav .nav-divider {
+  height: 35px;
+  vertical-align: middle;
+  border: 1px solid #E7E7E7;
+  margin-left: 1.1vw;
+}
+nav #nav-date {
+  font-size: 20px;
+  margin: 0px;
+  width: 15vw;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  z-index: 4;
+  margin-right: 3vw;
+}
+
+.page_container {
+  position: relative;
+  width: 70vw;
+  margin-right: 15vw;
+  margin-left: 15vw;
+  min-height: 82vh;
+  margin-top: 23vh;
+}
+
+h1 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+@media (max-width: 1000px) {
+  nav #logo {
+    height: 70%;
+  }
+  nav .nav-button {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  h2 {
+    font-size: 4vh;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+  }
+
+  section#acceuil {
+    margin-top: 18vh;
+  }
+  section#acceuil img {
+    height: 100%;
+    transform: translateX(-500px);
+    width: auto;
+  }
+  section#acceuil #H1_container {
+    position: relative;
+    top: 0vh;
+    width: 100%;
+  }
+
+  @keyframes carousel_forward_phone {
+    0% {
+      transform: translateX(50px);
+    }
+    80% {
+      transform: translateX(-186vw);
+    }
+    100% {
+      transform: translateX(50px);
+    }
+  }
+  section#news .carousel {
+    height: 58.3vh;
+    width: 465vw;
+    animation: carousel_forward_phone 2s linear infinite both paused;
+  }
+  section#news .card {
+    width: 90vw;
+    margin-left: 3vw;
+  }
+  section#news img {
+    width: 99%;
+  }
+  section#news .second_pelicule {
+    display: none;
+  }
+
+  section#programme .day_programme {
+    width: 100%;
+    height: 24%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+  }
+  section#programme .day_programme .date {
+    width: 12%;
+    font-size: 50px;
+    text-align: center;
+  }
+  section#programme .day_programme .films_liste {
+    width: 80%;
+  }
+  section#programme .day_programme .films_liste .carousel article {
+    width: 12vh;
+  }
+
+  section#reservation .container {
+    margin-left: 5vw;
+    width: 80vw;
+    height: 70%;
+    border: 1px solid white;
+    padding: 5vw;
+  }
+  section#reservation #day_selector {
+    height: 45%;
+    justify-content: space-between;
+  }
+  section#reservation #day_selector .num_day {
+    font-size: 100px;
+  }
+  section#reservation #day_selector .week-day {
+    font-size: 70px;
+  }
+  section#reservation #input #input_container {
+    width: 70%;
+  }
+  section#reservation #input #input_container #input_mail {
+    width: 90%;
+    position: absolute;
+    top: 570px;
+    left: 10px;
+  }
+  section#reservation #input #input_container label {
+    position: absolute;
+    top: 470px;
+    left: 40%;
+    font-size: 65px;
+  }
+  section#reservation #input #confirmation {
+    padding: 10px;
+    position: absolute;
+    top: 800px;
+    font-size: 80px;
+  }
+
+  section#contact .container .division {
+    width: 100%;
+    height: 50%;
+  }
+  section#contact .container #coor {
+    position: absolute;
+    top: 0px;
+  }
+  section#contact .container #map {
+    width: 100%;
+  }
+  section#contact .container #map #map_container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 630px;
+  }
+  section#contact .container #map #googleMap {
+    width: 70%;
+    height: 40%;
+  }
+  section#contact h3 {
+    font-size: 50px;
+  }
+}
+
+/*# sourceMappingURL=home_phone.css.map */

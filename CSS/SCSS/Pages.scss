@@ -1,0 +1,95 @@
+@import "main.scss";
+
+$space-after-img: 4vw;
+$affiche-width: 28vw;
+$header-width: $page_container-width - $affiche-width - $space-after-img;
+$space-beetween-infos: 7vh;
+
+#img_container{
+  img{
+    width: 100%;
+  }
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh ;
+  width: $affiche-width;
+  margin-right: $space-after-img;
+  margin-bottom: 2vw;
+  margin-top: 1vw;
+}
+
+header{
+  display: inline-block;
+  width: $header-width;
+  margin-bottom: 3vh;
+  .info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $space-beetween-infos;
+    max-width: ($header-width % 2) - 2vw;
+    align-items: baseline;
+  }
+  .titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  #main_infos{
+    #title{
+      font-size: 40px;
+      letter-spacing: 3px;
+    }
+    #date-time{
+      font-size: 35px;
+      #week_day{
+        color: #C4C4C4;
+      }
+      #week_number{
+        font-size: 60px;
+        margin-left: 5px;
+        color: white;
+      }
+    }
+  }
+  #film_infos{
+      font-size : 20px;
+  }
+}
+
+.paragraphe{
+  display: inline;
+  #descirption{
+    font-size: 30px;
+    color: white;
+  }
+  #texte{
+    font-size: 18px;
+    margin-bottom: 3vw;
+  }
+  h2{
+    letter-spacing: 3px;
+    color:white;
+  }
+}
+
+.img_content{
+  text-align: center;
+  background-color: #737DB1;
+  width: 100%;
+  max-height: 65vh;
+  overflow: hidden;
+  margin-bottom: 3vw;
+  img{
+    width:100%;
+  }
+}
+
+@media (max-device-width: $media_max_phone) {
+  @import './telephone/Pages_phone.scss';
+}
+
+@media (min-device-width: $media_max_phone) and (max-device-width: $media_max_tablette){
+  @import './tablette/Pages_tablette.scss';
+}

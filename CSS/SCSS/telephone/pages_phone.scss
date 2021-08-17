@@ -1,0 +1,28 @@
+@import "./main_phone.scss";
+
+.page_container{
+ width: 92vw;
+ margin-right: 5vw;
+ margin-left: 5vw;
+ margin-bottom: $navbar-height + 1vh;
+ margin-top: $navbar-height + 3.5vh;
+}
+
+#img_container{
+ min-height: 15vh;
+}
+
+header{
+ margin-top: 0vh;
+ margin-left: 3vw;
+ width: 56vw;
+ #main_infos{
+  margin-bottom: 3vh;
+ }
+ #film_infos{
+  font-size: 3vw;
+  margin-bottom: 2vh;
+  margin-top: 0vh;
+ }
+}
+

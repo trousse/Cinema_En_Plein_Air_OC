@@ -1,0 +1,201 @@
+@import './main_tablette.scss';
+
+h1{
+  font-size: 6vw;
+}
+
+h2{
+  font-size: 4vh;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+section{
+  height: $section-height;
+}
+
+section#acceuil{
+  margin-top:$navbar-height;
+  img{
+    height: 100%;
+    transform: translateX(-500px);
+    width: auto;
+  }
+  #H1_container{
+    position: relative;
+    top:0vh;
+    width: 100%;
+  }
+}
+section#news{
+  $nb-news:5;
+  $card-width:90vw;
+  $card-spacing:3vw;
+
+  @keyframes carousel_forward_phone {
+    0%{
+      transform: translateX(50px);
+    }
+    80%{
+      transform: translateX(-($card-spacing + $card-width) * ($nb-news - 3));
+    }
+    100%{
+      transform: translateX(50px);
+    }
+  }
+  .carousel{
+    height: $section-height - 18vh - 5.7vh;
+    width: ($card-spacing + $card-width) * $nb-news;
+    animation: carousel_forward_phone 2s linear infinite both paused;
+  }
+  .card{
+    width: $card-width;
+    margin-left: $card-spacing;
+    &:not(:hover) {
+      ::before {
+        display: none;
+      }
+    }
+    article{
+      header{
+        font-size: 5.3vw;
+      }
+      .article_body{
+        .image_container{
+          img{
+            height: 40vw;
+          }
+        }
+        p{
+          font-size: 4vw;
+        }
+      }
+    }
+    .card_footer{
+      font-size:5vw;
+    }
+  }
+  .forward_button{
+    display: none;
+  }
+  .forward_arrow{
+    display: none;
+  }
+  .backward_arrow{
+    display: none;
+  }
+  .backward_button{
+    display: none;
+  }
+
+  img{
+    width: 99%;
+  }
+  .second_pelicule{
+    display: none;
+  }
+}
+section#programme {
+  .day_programme {
+    width: 95%;
+    height: 24%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    .date{
+      width:12%;
+      font-size:5vw;
+      text-align: center;
+    }
+    .films_liste{
+      width:80%;
+      .carousel{
+        article{
+          img{
+            width: 185px;
+          }
+        }
+      }
+    }
+  }
+}
+section#reservation{
+  .container{
+    margin-left: 5vw;
+    width: 80vw;
+    height: 70%;
+    border: 1px solid white;
+    padding: 5vw
+  }
+  #day_selector{
+    height:45%;
+    justify-content: space-between;
+    .num_day{
+      font-size: 8vw;
+    }
+    .week-day{
+      font-size: 7vw;
+    }
+  }
+  #input {
+    #input_container {
+      width: 70%;
+
+      #input_mail {
+        width: 90%;
+        position: absolute;
+        top: 550px;
+        left: 10px;
+      }
+      label{
+        position: absolute;
+        top:420px;
+        left: 40%;
+        font-size: 8vw;
+      }
+    }
+    #confirmation{
+      padding: 10px;
+      position: absolute;
+      top:720px;
+      font-size: 8vw;
+    }
+  }
+}
+section#contact{
+
+  .container {
+    .division{
+      width: 100%;
+      height: 50%;
+    }
+    #coor{
+      position: absolute;
+      top: 0px;
+      font-size: 19vw;
+      h3{
+        font-size: 6vw;
+      }
+      #téléphone{
+        font-size: 5vw;
+      }
+      #mail{
+        font-size: 5vw;
+      }
+    }
+    #map {
+      width: 100%;
+      #map_container {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 500px;
+      }
+      #googleMap{
+        width: 80%;
+        height: 40%;
+      }
+    }
+
+  }
+}
